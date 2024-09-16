@@ -1,0 +1,71 @@
+.aboutme {
+    position: static;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10%;
+    height: 70vh;
+    justify-content: space-between;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.aboutme-content {
+    max-width: 700px;
+}
+
+.aboutme-content h2 {
+    position: relative;
+    padding: 5px;
+    margin: 25px;
+    font-size: 3.5rem;
+    font-weight: 75;
+    line-height: 1.2;
+    font-family: 'Courier New';
+}
+
+.aboutme-content h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #65ccb8;
+    animation: show 1s ease forwards;
+    animation-delay: 1.5s;     
+}
+
+.aboutme-content p {
+    margin: 10px;
+    position: absolute;
+    margin-right: 50px;
+    line-height: 1.5;
+    font-family: verdana;
+    font-size: 2rem;
+    font-family: 'Courier New';
+    
+}
+
+.aboutme-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #65ccb8;
+    animation: show 1s ease forwards;
+    animation-delay: 2.5s;     
+}
+
+@media (max-width: 768px) {
+    .aboutme-content h2 {
+        font-size: 2rem;
+    }
+
+    .aboutme-content p {
+        font-size: 1.5rem;
+    }
+}
